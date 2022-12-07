@@ -5,7 +5,6 @@
 * **Discord**: SkorpiON_4Eg
 * **E-mail**: vitalikrud03@gmail.com
 * **Phone**: +375 (29) 905-72-32
-#
 
 ## About me
 
@@ -15,7 +14,7 @@ _My strengths that can help during studying:_
    - Ability to learn quickly
    - High concentration
    - Craving for new knowledge
-#
+
 ## Skills
 
 - HTML (basic knowledge)
@@ -23,7 +22,7 @@ _My strengths that can help during studying:_
 - C++ (Fundamentals, OOP)
 - C# (Fundamentals, WinForms)
 - MySQL (basic knowledge)
-#
+
 ## Code example
 
 An example from the project connected with the realization of **String** class in **C++**. The function _overloads an operator_ '>>'. 
@@ -40,7 +39,6 @@ std::istream& operator >>(std::istream& in, String obj)\
 	return in;
 }
 ```
-#
 
 ## Education
 
@@ -50,7 +48,6 @@ std::istream& operator >>(std::istream& in, String obj)\
 - ***Courses***
    - \#SimpleCode C++
    - \#SimpleCode C#
-#
 
 ## Languages
 
