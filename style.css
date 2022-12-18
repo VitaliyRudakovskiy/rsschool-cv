@@ -1,13 +1,25 @@
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: gainsboro;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -18,15 +30,30 @@ body {
 }
 
 .nav-link {
-    padding: 0 20px;
-    line-height: 50px;
+    line-height: 57px;
+    padding: 18px 16px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: #100a55;
+}   
+
+.nav-link:active {
+    background-color: #307a32;
+    color: white;
 }
 
 .portrait {
+    position: relative;
+    bottom: 300px;
+    right: 420px;
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    display: block;
 }
 
 .main-container {
@@ -35,11 +62,161 @@ body {
 }
 
 .section {
+    border: 1px solid #307a32;
+    /*width: calc(50%-20px);*/
     width: 50%;
+    float: left;
 }
 
-@media (max-width: 768px) {
+#profile {
+    height: 300px;
+    float: right;
+}
+
+.student {
+    font-family: Verdana;
+    font-size: 1.5em;
+}
+
+#h1 {
+    font-size: 3.7em;
+}
+
+.section-title {    
+    font-family: Verdana;
+    font-size: 2em;
+}
+
+@media (max-width: 688px) {
     .section {
         width: 100%;
     }
+}
+
+#contacts {
+    padding: 300px 0 0 220px;
+}
+
+.contact-list {
+    list-style: none;
+    line-height: 25px;
+}
+
+.contact-item {
+    position: relative;
+    bottom: 30px;
+    font-family: Tahoma;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.contact-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.discord {
+    position: relative;
+    right: 35px;
+    top: 5px;
+}
+
+.gmail {
+    position: relative;
+    right: 59px;
+    top: 37px;
+}
+
+.github {
+    position: relative;
+    right: 83px;
+    top: 68px;
+}
+
+.telegram {
+    position: relative;
+    right: 107px;
+    top: 100px;
+}
+
+.telephone {
+    position: relative;
+    right: 132px;
+    top: 133px;
+}
+
+.my-info {
+    font-family: Verdana;
+    font-size: 1.3em;
+}
+
+.srengths {
+    font-family: Verdana;
+    font-size: 1.3em;
+}
+
+.str-list {
+    font-family: Verdana;
+    font-size: 1.3em;
+}
+
+.skills-title {
+    padding-left: 220px;
+}
+
+.skills {
+    font-family: Verdana;
+    font-size: 1.3em;
+    padding-left: 240px;
+}
+
+.code-title {
+    font-family: Verdana;
+    font-size: 1.3em;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+#education {
+    position: relative;
+    bottom: 648px;
+}
+
+.educ {
+   padding-left: 220px;
+}
+
+.education {
+    font-family: Verdana;
+    font-size: 1.3em;
+    padding-left: 147px;
+}
+
+.courses {
+    font-family: Verdana;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 217px;
+}
+
+.course-name {
+    font-family: Verdana;
+    font-size: 1.3em;
+    padding-left: 177px;
+    list-style: none;
+}
+
+#languages {
+    position: relative;
+    bottom: 323px;
+    right: 620px;
+    padding-left: 217px;
+}
+
+.lang-list {
+    font-family: Verdana;
+    font-size: 1.3em;
 }
