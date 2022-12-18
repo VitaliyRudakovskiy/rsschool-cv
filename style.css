@@ -43,7 +43,7 @@ body {
 }   
 
 .nav-link:active {
-    background-color: #307a32;
+    background-color: #3d473d;
     color: white;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .section {
-    border: 1px solid #307a32;
+    /*border: 1px solid #307a32;
     /*width: calc(50%-20px);*/
     width: 50%;
     float: left;
@@ -219,4 +219,23 @@ body {
 .lang-list {
     font-family: Verdana;
     font-size: 1.3em;
+}
+
+.RSS {
+    height: 70px;
+    width: 200px;
+    margin-left: 210px;
+}
+
+.Git {
+    height: 70px;
+    width: 70px;
+    margin-left: 160px;
+}
+
+.year {
+    font-family: Verdana;
+    font-size: 2.3em;
+    position: relative;
+    padding-left: 1100px;
 }
