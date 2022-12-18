@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="fav_icon" href="images/favicon.ico">
+    <title>CV</title>
+  </head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+       </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="container">
+      <section class="section" id="profile">
+        <h1 class="section-title" id="h1">Vitaliy Rudakovskiy</h1>
+        <p class="student">Student</p>
+        <img class="portrait" src="images/Portrait (square).jpg" alt="My photo">
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="contact-list"> 
+          <img class="contact-icon discord" src="images/Discord_icon.png" alt="Discord icon">
+          <img class="contact-icon gmail" src="images/Gmail_icon.png" alt="Gmail icon">
+          <img class="contact-icon github" src="images/Github_icon.png" alt="GitHub icon">
+          <img class="contact-icon telegram" src="images/Telegram_icon.png" alt="Telegram icon">
+          <img class="contact-icon telephone" src="images/Telephone_icon.png" alt="Telephone icon">
+          <li class="contact-item"><a href="https://discordapp.com/users/422412665747669012">SkorpiON_4Eg</a></li>
+          <li class="contact-item">vitalikrud03@gmail.com</li>
+          <li class="contact-item"><a href="https://github.com/VitaliyRudakovskiy">VitaliyRudakovskiy</a></li>
+          <li class="contact-item"><a href="@v_rudakovskiy">@v_rudakovskiy</a></li>
+          <li class="contact-item">+375 (29) 905-72-32</li>
+        </ul>
+      </section>
+      <section class="section" id="about-me">
+        <h2 class="section-title">About me</h2>
+        <p class="my-info">
+          I am 19 years old, I study at the university. The studying seems to be simple and I have a desire to gain some useful experience in my leasure time. Working with the field of front-end developing unlocks great opportunities, and what is more important, it requires not only technical skills but some creativity too.
+        </p>
+        <p class="srengths">My strengths that can help during studying:</p>
+          <ul class="str-list">
+            <li>Ability to learn quickly</li>
+            <li>High concentration</li>
+            <li>Craving for new knowledge</li>
+          </ul>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title skills-title">Skills</h2>   
+        <ul class="skills">
+          <li>HTML (basic knowledge)</li>
+          <li>CSS (basic knowledge)</li>
+          <li>Git, GitHub</li>
+          <li>C++ (Fundamentals, OOP)</li>
+          <li>C# (Fundamentals, WinForms)</li>
+          <li>MySQL (basic knowledge)</li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">Code example</h2>
+        <p class="code-title">It's solving of the Collatz hypothesis</p>
+        <pre class="code">
+ static void Execute(int max_element)
+ {
+     int counter = 1;
+     int max_counter = 1;
+     int element = 1;
+     int number;
+     string result = "";
+     string buffer = "";
+
+     while (element &lt; max_element)
+     {
+         number = element;
+         do
+         {
+             buffer += number;
+             buffer += " ";
+             if (number % 2 == 0)
+             {
+                 number /= 2;
+             }
+             else
+             {
+                 number = number * 3 + 1;
+             }
+             counter++;
+         } while (number != 1);
+         if (counter &gt; max_counter)
+         {
+             max_counter = counter;
+             result = buffer;
+         }
+         buffer = "";
+         counter = 1;
+         element++;
+      }
+
+     result += "1";
+     Console.WriteLine(result);
+     Console.WriteLine("\nВ последовательности " + max_counter + 
+     " символов.");
+     Console.WriteLine();
+ }
+        </pre>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title educ">Education</h2> 
+        <pre class="education">
+          Belarusian State University of 
+          Informatics and Radioelectronics
+
+          Faculty of Computer-Aided Design</pre>
+        <p class="courses">Courses</p>
+          <ul>
+            <li class="course-name">#SimpleCode C++</li>
+            <li class="course-name">#SimpleCode C#</li>
+          </ul>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>   
+        <ul class="lang-list">
+          <li>Russian - native speaker</li>
+          <li>English - between B1 and B2</li>
+          <li>French - A1</li>
+        </ul>
+       </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <a href="https://rs.school/js/"><img class="RSS" src="images/rsschool_icon.png" alt="RSS icon"></a>
+      <a href="https://github.com/VitaliyRudakovskiy"><img class="Git" src="images/free-icon-github-733609.png" alt="GitHub icon"></a>
+      <p class="year">2022</p>  
+    </div>
+  </footer>
+</body>
+</html>
